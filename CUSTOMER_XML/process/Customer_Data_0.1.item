@@ -377,7 +377,48 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="192">
+  <node componentName="tSplitRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSplitRow_1"/>
+    <elementParameter field="TABLE" name="COL_MAPPING">
+      <elementValue elementRef="CUSTOMER_CODE" value="&quot;CMBND_CUST_DATA.CUSTOMER_CODE&quot;"/>
+      <elementValue elementRef="MV_SEQ" value="&quot;CMBND_CUST_DATA.MV_SEQ&quot;"/>
+      <elementValue elementRef="SV_SEQ" value="&quot;CMBND_CUST_DATA.SV_SEQ&quot;"/>
+      <elementValue elementRef="T24_BUSINESSDATE" value="&quot;CMBND_CUST_DATA.T24_BUSINESSDATE&quot;"/>
+      <elementValue elementRef="SHORT_NAME" value="&quot;CMBND_CUST_DATA.SHORT_NAME&quot;"/>
+      <elementValue elementRef="NAME_1" value="&quot;CMBND_CUST_DATA.NAME_1&quot;"/>
+      <elementValue elementRef="NAME_2" value="&quot;CMBND_CUST_DATA.NAME_2&quot;"/>
+      <elementValue elementRef="STREET" value="&quot;CMBND_CUST_DATA.STREET&quot;"/>
+      <elementValue elementRef="TOWN_COUNTRY" value="&quot;CMBND_CUST_DATA.TOWN_COUNTRY&quot;"/>
+      <elementValue elementRef="POSTAL_CODE" value="&quot;CMBND_CUST_DATA.POSTAL_CODE&quot;"/>
+      <elementValue elementRef="COUNTRY" value="&quot;CMBND_CUST_DATA.COUNTRY&quot;"/>
+      <elementValue elementRef="CUSTOMER_CODE" value="&quot;CMBND_CUST_DATA.CUSTOMER_DATA&quot;"/>
+      <elementValue elementRef="MV_SEQ" value="&quot;CMBND_CUST_DATA.MV_SEQ_CP&quot;"/>
+      <elementValue elementRef="SV_SEQ" value="&quot;CMBND_CUST_DATA.SV_SEQ&quot;"/>
+      <elementValue elementRef="T24_BUSINESSDATE" value="&quot;CMBND_CUST_DATA.T24_BUSINESSDATE&quot;"/>
+      <elementValue elementRef="SHORT_NAME" value="&quot;CMBND_CUST_DATA.SHORT_NAME_CP&quot;"/>
+      <elementValue elementRef="NAME_1" value="&quot;CMBND_CUST_DATA.NAME_1_CP&quot;"/>
+      <elementValue elementRef="NAME_2" value="&quot;CMBND_CUST_DATA.NAME_2_CP&quot;"/>
+      <elementValue elementRef="STREET" value="&quot;CMBND_CUST_DATA.STREET_CP&quot;"/>
+      <elementValue elementRef="TOWN_COUNTRY" value="&quot;CMBND_CUST_DATA.TOWN_COUNTRY_CP&quot;"/>
+      <elementValue elementRef="POSTAL_CODE" value="&quot;CMBND_CUST_DATA.POSTAL_CODE_CP&quot;"/>
+      <elementValue elementRef="COUNTRY" value="&quot;CMBND_CUST_DATA.COUNTRY_CP&quot;"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSplitRow_1">
+      <column comment="" key="false" length="-1" name="CUSTOMER_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MV_SEQ" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SV_SEQ" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="T24_BUSINESSDATE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SHORT_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME_1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME_2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STREET" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TOWN_COUNTRY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="POSTAL_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="COUNTRY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -413,22 +454,6 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="COUNTRY"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MV_SEQ_CP"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SHORT_NAME_CP"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NAME_1_CP"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NAME_2_CP"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="STREET_CP"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TOWN_COUNTRY_CP"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="POSTAL_CODE_CP"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COUNTRY_CP"/>
-      <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
@@ -445,14 +470,6 @@
       <column comment="" key="false" length="-1" name="TOWN_COUNTRY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="POSTAL_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="COUNTRY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="MV_SEQ_CP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SHORT_NAME_CP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="NAME_1_CP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="NAME_2_CP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="STREET_CP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TOWN_COUNTRY_CP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="POSTAL_CODE_CP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="COUNTRY_CP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tFileTouch_1">
@@ -514,32 +531,42 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="CUST_EXTRACT_DATA"/>
   </connection>
-  <connection connectorName="FLOW" label="CMBND_CUST_DATA" lineStyle="0" metaname="CMBND_CUST_DATA" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
+  <connection connectorName="FLOW" label="CMBND_CUST_DATA" lineStyle="0" metaname="CMBND_CUST_DATA" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tSplitRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="CMBND_CUST_DATA"/>
   </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tSplitRow_1" offsetLabelX="0" offsetLabelY="0" source="tSplitRow_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
   <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Assigning current datetime to a context variable"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileTouch_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Creating a empty Excle file and concating the context variable to the filename in suffix."/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputXML_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Transforming the Customer data as per standard"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4777e324-c402-43bb-a104-38d09125e8ef"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8M536SmEQR9Uf5Q30esYIH/dveqQAs2QQHMp6++Ax36TRbvy0nX/VYYiKwAc5OAEVeLJVgRV6dl4&#13;
-j1aNibOX5w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2c50f42f-fff6-4476-b7cc-3c8e4999faa5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>M2fC19CRy7HeKJY6el1xocDOs68RNoshsaTUGUep40ajg1WaCM4fqEJrUO5/lAIxnh1LtFdmqoVV&#13;
-cNTlVIeAOA==</DigestValue></Reference></SignedInfo><SignatureValue>HC0i1Gi4hh+s6cOV4wFqKi5QOT8EI/kr7bqTsJ4j4JfHx4MrsXlguY+V2wiNd9MgPWwXJg0GFsoH&#13;
-L/MLlPXx3S90xKcOR9OcaFbJfRO4YV9uciw/k4an6L6KC9j8PFmmuIuJZTrg6/Gyth+eW/DvSW+L&#13;
-yOlrxooT4y/fwSUSaKiVWndF5CdKem4AhPAKLbiw7FlW8NZK2z3fr/hXu+7uDPyF3vrs+EOZwXLf&#13;
-4zYo6RJwSp1yxEm7yJ3Mn/rk0uuDbfzuvDla2+xJ715wo7CnSsr1OObJ1aS3KJr4Yy4YbyXPXv+r&#13;
-DahsCp6zEJ5HXxJP0CjumLh4ELDSWGRCUuUBlQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_cab98ea1-cb6a-4aa6-b2d5-6436ff105166"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wIK6V0UxiprRSeMKCE7wELzp5Y/+8lzj+cvm1ro92LK9Ffqvl7KAtUqBQUQB0jQO/QjA2iGW+R7D&#13;
+P7hwHgr2kQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_64590abf-a4d8-4494-902f-985cbe55291e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>OFNaF3r+woTCaxuOvfx2er0oFZvB8vFhWSIxG2upvo/6Ok3QI5HZ8AtGeitMGsrh8vFUgb2I8M5q&#13;
++aidTpXRmw==</DigestValue></Reference></SignedInfo><SignatureValue>Pw6I5dq6cCmxoy+WddY7rNOvvb6M0NzoRTrqYn9rhTDbVP4qh3Wp2hkQheY/XbcBcJ/HEc5DF3EJ&#13;
+Sf2iXiOC2GaC+w30hN5mC+RW77hkmBSRZ0z1YsLuewq9i++i74X2eG5GeqPyE2/utLGdeQ2Eqch3&#13;
+vwP9aEe+tOyHysMnDwyONGol+yqt2MBUYcnHZfVbIEm7YFkh4QUPX1PisyOeiPJCQZEnuc5Km9NL&#13;
+KsqRvv5reCbCEpz6wyMpfZI2d5clPhOe6gNJviDj4wJDbeQ2LeVmMqgEd80Koj+fiW9Fss0zq5Ol&#13;
+ECPtTOvg1+WAFNW+HZMKHaie/VDHg5MtD/Bz+Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -561,4 +588,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2c50f42f-fff6-4476-b7cc-3c8e4999faa5" Target="#_4777e324-c402-43bb-a104-38d09125e8ef"><Timestamp>2024-04-09 13:48:28</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_64590abf-a4d8-4494-902f-985cbe55291e" Target="#_cab98ea1-cb6a-4aa6-b2d5-6436ff105166"><Timestamp>2024-04-09 13:59:09</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
