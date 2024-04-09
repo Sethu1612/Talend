@@ -380,28 +380,28 @@
   <node componentName="tSplitRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSplitRow_1"/>
     <elementParameter field="TABLE" name="COL_MAPPING">
-      <elementValue elementRef="CUSTOMER_CODE" value="&quot;CMBND_CUST_DATA.CUSTOMER_CODE&quot;"/>
-      <elementValue elementRef="MV_SEQ" value="&quot;CMBND_CUST_DATA.MV_SEQ&quot;"/>
-      <elementValue elementRef="SV_SEQ" value="&quot;CMBND_CUST_DATA.SV_SEQ&quot;"/>
-      <elementValue elementRef="T24_BUSINESSDATE" value="&quot;CMBND_CUST_DATA.T24_BUSINESSDATE&quot;"/>
-      <elementValue elementRef="SHORT_NAME" value="&quot;CMBND_CUST_DATA.SHORT_NAME&quot;"/>
-      <elementValue elementRef="NAME_1" value="&quot;CMBND_CUST_DATA.NAME_1&quot;"/>
-      <elementValue elementRef="NAME_2" value="&quot;CMBND_CUST_DATA.NAME_2&quot;"/>
-      <elementValue elementRef="STREET" value="&quot;CMBND_CUST_DATA.STREET&quot;"/>
-      <elementValue elementRef="TOWN_COUNTRY" value="&quot;CMBND_CUST_DATA.TOWN_COUNTRY&quot;"/>
-      <elementValue elementRef="POSTAL_CODE" value="&quot;CMBND_CUST_DATA.POSTAL_CODE&quot;"/>
-      <elementValue elementRef="COUNTRY" value="&quot;CMBND_CUST_DATA.COUNTRY&quot;"/>
-      <elementValue elementRef="CUSTOMER_CODE" value="&quot;CMBND_CUST_DATA.CUSTOMER_DATA&quot;"/>
-      <elementValue elementRef="MV_SEQ" value="&quot;CMBND_CUST_DATA.MV_SEQ_CP&quot;"/>
-      <elementValue elementRef="SV_SEQ" value="&quot;CMBND_CUST_DATA.SV_SEQ&quot;"/>
-      <elementValue elementRef="T24_BUSINESSDATE" value="&quot;CMBND_CUST_DATA.T24_BUSINESSDATE&quot;"/>
-      <elementValue elementRef="SHORT_NAME" value="&quot;CMBND_CUST_DATA.SHORT_NAME_CP&quot;"/>
-      <elementValue elementRef="NAME_1" value="&quot;CMBND_CUST_DATA.NAME_1_CP&quot;"/>
-      <elementValue elementRef="NAME_2" value="&quot;CMBND_CUST_DATA.NAME_2_CP&quot;"/>
-      <elementValue elementRef="STREET" value="&quot;CMBND_CUST_DATA.STREET_CP&quot;"/>
-      <elementValue elementRef="TOWN_COUNTRY" value="&quot;CMBND_CUST_DATA.TOWN_COUNTRY_CP&quot;"/>
-      <elementValue elementRef="POSTAL_CODE" value="&quot;CMBND_CUST_DATA.POSTAL_CODE_CP&quot;"/>
-      <elementValue elementRef="COUNTRY" value="&quot;CMBND_CUST_DATA.COUNTRY_CP&quot;"/>
+      <elementValue elementRef="CUSTOMER_CODE" value="CMBND_CUST_DATA.CUSTOMER_CODE"/>
+      <elementValue elementRef="MV_SEQ" value="CMBND_CUST_DATA.MV_SEQ"/>
+      <elementValue elementRef="SV_SEQ" value="CMBND_CUST_DATA.SV_SEQ"/>
+      <elementValue elementRef="T24_BUSINESSDATE" value="CMBND_CUST_DATA.T24_BUSINESSDATE"/>
+      <elementValue elementRef="SHORT_NAME" value="CMBND_CUST_DATA.SHORT_NAME"/>
+      <elementValue elementRef="NAME_1" value="CMBND_CUST_DATA.NAME_1"/>
+      <elementValue elementRef="NAME_2" value="CMBND_CUST_DATA.NAME_2"/>
+      <elementValue elementRef="STREET" value="CMBND_CUST_DATA.STREET"/>
+      <elementValue elementRef="TOWN_COUNTRY" value="CMBND_CUST_DATA.TOWN_COUNTRY"/>
+      <elementValue elementRef="POSTAL_CODE" value="CMBND_CUST_DATA.POSTAL_CODE"/>
+      <elementValue elementRef="COUNTRY" value="CMBND_CUST_DATA.COUNTRY"/>
+      <elementValue elementRef="CUSTOMER_CODE" value="CMBND_CUST_DATA.CUSTOMER_DATA"/>
+      <elementValue elementRef="MV_SEQ" value="CMBND_CUST_DATA.MV_SEQ_CP"/>
+      <elementValue elementRef="SV_SEQ" value="CMBND_CUST_DATA.SV_SEQ"/>
+      <elementValue elementRef="T24_BUSINESSDATE" value="CMBND_CUST_DATA.T24_BUSINESSDATE"/>
+      <elementValue elementRef="SHORT_NAME" value="CMBND_CUST_DATA.SHORT_NAME_CP"/>
+      <elementValue elementRef="NAME_1" value="CMBND_CUST_DATA.NAME_1_CP"/>
+      <elementValue elementRef="NAME_2" value="CMBND_CUST_DATA.NAME_2_CP"/>
+      <elementValue elementRef="STREET" value="CMBND_CUST_DATA.STREET_CP"/>
+      <elementValue elementRef="TOWN_COUNTRY" value="CMBND_CUST_DATA.TOWN_COUNTRY_CP"/>
+      <elementValue elementRef="POSTAL_CODE" value="CMBND_CUST_DATA.POSTAL_CODE_CP"/>
+      <elementValue elementRef="COUNTRY" value="CMBND_CUST_DATA.COUNTRY_CP"/>
     </elementParameter>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSplitRow_1">
@@ -560,13 +560,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_cab98ea1-cb6a-4aa6-b2d5-6436ff105166"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wIK6V0UxiprRSeMKCE7wELzp5Y/+8lzj+cvm1ro92LK9Ffqvl7KAtUqBQUQB0jQO/QjA2iGW+R7D&#13;
-P7hwHgr2kQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_64590abf-a4d8-4494-902f-985cbe55291e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>OFNaF3r+woTCaxuOvfx2er0oFZvB8vFhWSIxG2upvo/6Ok3QI5HZ8AtGeitMGsrh8vFUgb2I8M5q&#13;
-+aidTpXRmw==</DigestValue></Reference></SignedInfo><SignatureValue>Pw6I5dq6cCmxoy+WddY7rNOvvb6M0NzoRTrqYn9rhTDbVP4qh3Wp2hkQheY/XbcBcJ/HEc5DF3EJ&#13;
-Sf2iXiOC2GaC+w30hN5mC+RW77hkmBSRZ0z1YsLuewq9i++i74X2eG5GeqPyE2/utLGdeQ2Eqch3&#13;
-vwP9aEe+tOyHysMnDwyONGol+yqt2MBUYcnHZfVbIEm7YFkh4QUPX1PisyOeiPJCQZEnuc5Km9NL&#13;
-KsqRvv5reCbCEpz6wyMpfZI2d5clPhOe6gNJviDj4wJDbeQ2LeVmMqgEd80Koj+fiW9Fss0zq5Ol&#13;
-ECPtTOvg1+WAFNW+HZMKHaie/VDHg5MtD/Bz+Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_033b2b1c-11b2-48f5-be9b-05602d5a56e3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0Qq8tOG6IOFRfw5wsD0Gey2wFu0vlXo/vXhcfwW0DI0a2pSst6nrmmzz56F6QoDL6AkMTtil8Ygk&#13;
+03b0WCDHtg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b4530284-ebf7-443c-8cd7-19d9708b16ad"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rNLhWtGhBd0NuZiyaCm/6r1CESMz0CxtVR1Z3qC6ghgrZM6TqJiyO7mNQmgCYISK2nA6tsb8WPMa&#13;
+wdLNgrAaWA==</DigestValue></Reference></SignedInfo><SignatureValue>iwciNXtfSKW2D3Xh6+K8+K/jx+6BJkaUEeKEAieS1z3ZnxZ5Tl5qwVUywOBNjwX8Zg7BGYOywyLx&#13;
+Qt2DM1mBhydrD+GD3cOZWi1t6g5g1+gAWX1+xCZvdGPF9uXfC8qv1gQnCeX7WwO/d7ylH7i6szpT&#13;
+4nIeWJnhiT1g3257/JCZVvGBT30t3LV7FgOM2D53xSYISdFLlKhLUmvJC/U62USSMU3PL/cZnRDj&#13;
+Olsxc6fQ06b0xgIV+RD4C0iVK7N9gignpzfWw7ZNhHt8gbiuN9ssj/CYdm7+F/4Ru6alxEYuLw2E&#13;
+M+sQPnYUfrkWdvRuzMuBeewVLu5DIrHPubcV4A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -588,4 +588,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_64590abf-a4d8-4494-902f-985cbe55291e" Target="#_cab98ea1-cb6a-4aa6-b2d5-6436ff105166"><Timestamp>2024-04-09 13:59:09</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b4530284-ebf7-443c-8cd7-19d9708b16ad" Target="#_033b2b1c-11b2-48f5-be9b-05602d5a56e3"><Timestamp>2024-04-09 14:02:53</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
