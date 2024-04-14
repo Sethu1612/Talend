@@ -314,7 +314,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="CMBND_CUST_DATA">
       <column comment="" key="false" length="-1" name="CUSTOMER_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="MV_SEQ" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MV_SEQ" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="SV_SEQ" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="T24_BUSINESSDATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="SHORT_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -324,7 +324,7 @@
       <column comment="" key="false" length="-1" name="TOWN_COUNTRY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="POST_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="COUNTRY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="MV_SEQ_CP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MV_SEQ_CP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="SHORT_NAME_CP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="NAME_1_CP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="NAME_2_CP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -338,7 +338,7 @@
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="CMBND_CUST_DATA" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="CUSTMR_EXTRACT_DATA.CUSTOMER_CODE " name="CUSTOMER_CODE" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="CUSTMR_EXTRACT_DATA.MV_SEQ == &quot;1&quot; ? &quot;1&quot; : &quot;1&quot; " name="MV_SEQ" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CUSTMR_EXTRACT_DATA.MV_SEQ == &quot;1&quot; ? 1 : 1 " name="MV_SEQ" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="1" name="SV_SEQ" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="TalendDate.formatDate(&quot;dd-MM-YYY&quot;,TalendDate.getCurrentDate()) " name="T24_BUSINESSDATE" nullable="true" type="id_String"/>
         <mapperTableEntries expression="CUSTMR_EXTRACT_DATA.SHORT_NAME " name="SHORT_NAME" nullable="true" type="id_String"/>
@@ -348,7 +348,7 @@
         <mapperTableEntries expression="CUSTMR_EXTRACT_DATA.TOWN_COUNTRY " name="TOWN_COUNTRY" nullable="true" type="id_String"/>
         <mapperTableEntries expression="CUSTMR_EXTRACT_DATA.POST_CODE " name="POST_CODE" nullable="true" type="id_String"/>
         <mapperTableEntries expression="CUSTMR_EXTRACT_DATA.COUNTRY " name="COUNTRY" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="CUSTMR_EXTRACT_DATA.MV_SEQ_CP " name="MV_SEQ_CP" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Integer.parseInt(STMR_EXTRACT_DATA.MV_SEQ_CP) " name="MV_SEQ_CP" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="CUSTMR_EXTRACT_DATA.SHORT_NAME_CP " name="SHORT_NAME_CP" nullable="true" type="id_String"/>
         <mapperTableEntries expression="CUSTMR_EXTRACT_DATA.NAME_1_CP " name="NAME_1_CP" nullable="true" type="id_String"/>
         <mapperTableEntries expression="CUSTMR_EXTRACT_DATA.NAME_2_CP " name="NAME_2_CP" nullable="true" type="id_String"/>
@@ -408,7 +408,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSplitRow_1">
       <column comment="" key="false" length="-1" name="CUSTOMER_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="MV_SEQ" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MV_SEQ" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="SV_SEQ" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="T24_BUSINESSDATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="SHORT_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -480,7 +480,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileOutputExcel_1">
       <column comment="" key="false" length="-1" name="CUSTOMER_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="MV_SEQ" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MV_SEQ" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="SV_SEQ" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="T24_BUSINESSDATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="SHORT_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -586,13 +586,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f86b292e-87a3-4259-aa10-bb0996ee38ef"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>DkHl/0IUzVDiFrjL+dnMh9yI/E+mZkC7C6euxGUGDEg9R7dP0UTdF49VThVjYSTbbMogLj4DG9U4&#13;
-H4XkP2B8xA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ae434ad8-3b35-423f-8243-f1eccd98ca2d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mn2Pw0pA7hgEyqy4X5TXBSPJF4K9cDsgIvVQnFXXDjNGrADdnfa8i1m+JWQRYQJpHjYRjEvtuzRM&#13;
-0M+8dseqxQ==</DigestValue></Reference></SignedInfo><SignatureValue>TkObT/CdlKC2HwpkHvmEwLRo9iZvr8CwfbJL7a5zM5N4IhT7ZQlFMTe8m7bl8XOdqMF/WhJn24bO&#13;
-A1rGQYZTLZtneSsfwzNJKIFt3BbLnzf1OYRejuDB6gpFk7+wIQp1RAdffRpwu4tOSBKvGeaJN7YC&#13;
-6RnMrYydUw8bY6OXlvJsMOU6hrdnzutSBRs0x264Iy62AeLtDxWmQt9yo3q6TyKQMegWw6xQGH+Z&#13;
-Cj9I4vuisnJAi/ujosQnUDTXSEzOT1fnYkdloslKOZUQNLZNIl7zUOP1lIfx1l+TUN6PdcXeqtnv&#13;
-baJ7TkCoa7fOS1JY873m5aOtEwxu/ZBd9QFdeg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2b8caf8f-583f-4989-8fa6-f9013bc8a21f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6quFo2Ejt8Ys3Uns2o4//LRA3uw+khDcASFWUDDYfvnniafS8BZGkBEjyiHL5TcJ+LPEGpF01qH4&#13;
+r77AwJ3maQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_40c41005-ca96-44ec-a850-36e4ccc99762"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Vkutm2rzf20J6pw9I3T926t5alaULLnOO6zob/4X/LEXIvRyw9UPG26rL1GVB8CArXvHlgLpB6g6&#13;
+vpELautBag==</DigestValue></Reference></SignedInfo><SignatureValue>Hzu8UFspMKKe6OkQgJx/g9nNm08CvjizUPWRHIYy3C4ecxhGN4Nx0PUnuq8gMoAYiNjM/VVKQ6xN&#13;
+sPMP0h88Djaq4p3mIFHj5SkIa0sbFMczPOMP7JgmlEjJ4W5zYBJiqL1QcpUZs2NyKqXl4ZnwBsG/&#13;
+T67Kp8zIB2P7G318dl87jGeDDptMkriloSSM8UOPL18b3Vm5OCpwO+2foNG4rnI8nSEsq8Imhw6/&#13;
+BBk2fQOaRfe0crheg4NidQs3IVrUvnTYRFAafc1fjVDat/NFUTIVqGX3rwisaZbbBnOC6xzMehIL&#13;
+UBV9ZcA6PSbHa2uFHX6FNZi3R7qt+Im790ah7A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -614,4 +614,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ae434ad8-3b35-423f-8243-f1eccd98ca2d" Target="#_f86b292e-87a3-4259-aa10-bb0996ee38ef"><Timestamp>2024-04-14 08:55:03</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_40c41005-ca96-44ec-a850-36e4ccc99762" Target="#_2b8caf8f-583f-4989-8fa6-f9013bc8a21f"><Timestamp>2024-04-14 08:57:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
